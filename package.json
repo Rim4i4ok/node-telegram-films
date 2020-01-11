@@ -7,15 +7,16 @@
     "server": "nodemon app.js"
   },
   "repository": {
-		"type": "git",
-		"url": "git+https://github.com/Rim4i4ok/short-url.git"
-	},
+    "type": "git",
+    "url": "git+https://github.com/Rim4i4ok/short-url.git"
+  },
   "keywords": [],
   "author": "Rim4i4ok",
   "license": "ISC",
   "dependencies": {
     "config": "^3.2.4",
-    "node-telegram-bot-api": "^0.40.0"
+    "node-telegram-bot-api": "^0.40.0",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
