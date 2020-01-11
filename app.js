@@ -13,6 +13,7 @@ bot.onText(/\/movie (.+)/, (msg, match) => {
 	// 'match' is the result of executing the regexp above on the text content
 	// of the message
 
+	const movie = match[1];
 	const chatId = msg.chat.id;
 
 	const url = `${movieApiUrl}&t=${movie}`;
@@ -24,7 +25,11 @@ bot.onText(/\/movie (.+)/, (msg, match) => {
 					parse_mode: "Markdown",
 				})
 				.then(() => {
-					bot.sendMessage(chatId, `Info:\n ${body}`);
+					var data = JSON.parse(body);
+
+					bot.sendPhoto(chatId, data.Poster, {
+						caption: `Title: ${data.Title}\nYear: ${data.Year}\nRated: ${data.Rated}`,
+					});
 				});
 		}
 	});
