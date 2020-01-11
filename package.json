@@ -1,0 +1,23 @@
+{
+  "name": "node-telegram-films",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "server": "nodemon app.js"
+  },
+  "repository": {
+		"type": "git",
+		"url": "git+https://github.com/Rim4i4ok/short-url.git"
+	},
+  "keywords": [],
+  "author": "Rim4i4ok",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.2.4",
+    "node-telegram-bot-api": "^0.40.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
