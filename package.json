@@ -14,7 +14,7 @@
   "author": "Rim4i4ok",
   "license": "ISC",
   "dependencies": {
-    "config": "^3.2.4",
+    "config": "^3.3.8",
     "node-telegram-bot-api": "^0.40.0",
     "request": "^2.88.0"
   },
